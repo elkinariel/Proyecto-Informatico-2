@@ -1,0 +1,100 @@
+
+/* "@import" importamos una fuente de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* se realizaron e importaron demas archivos css para que el proyecto sea más organizado */
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+
+/* se utilizo el box-sizing para que todo se contenga dentro del modelo de caja, esto servira para un buen diseño responsive*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+/* aplicamos fuente */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header, al deslizarse por la pagina el encabezado siempre estara visible*/
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+     display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 20px;
+
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px){
+   .sociales {
+    width: auto;
+   }
+
+   footer .contenedor{
+       justify-content: space-between;
+   }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+
+
+
+
+
